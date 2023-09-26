@@ -94,3 +94,9 @@ Git
             - untracked(추적안된 상태)
         - add를 통해 스테이징
             - untracked -> staged
+                                  - 추적안됨 -> 스테이징(애딩)
+        - commit을 통해 snapshot
+            - staged -> unmodified
+            - 스테이징 -> 수정없음
+        - 한번 add가 된 상태에서 파일 내용이 변경된 경우
+            - unmodified -> modified
