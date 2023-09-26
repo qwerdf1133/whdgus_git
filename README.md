@@ -71,3 +71,26 @@ Git
 ### 소스트리에서 토큰 적용하기
 - 최상단 메뉴 [도구] => [옵션] => [인증]
 - 계정선택 => 편집 => 인증 : Personal Access Token 선택 후 복사한 토큰 붙여넣기
+
+### Git 저장방식 알아보기
+- Git의 저장방식 SNAPSHOT
+    - 변경된 파일을 통째로 저장
+- 차이점만 저장하는 방식 : delta
+- 순서
+    1. 변경된 파일을 저장한다. (save)
+    2. 스테이지로 올라간다. (git add)
+    3. 스테이지의 스냅샷을 찍는다. (git commit)
+    4. 원격저장소 업데이트 (git push)
+
+- 깃으로 관리하는 파일의 4가지 상태
+    - 추적안된 상태 (untracked)
+    - 추적된 상태 (tracked)
+        1. 수정 없음 (unmodified)
+        2. 수정 함 (modified)
+        3. 스테이지 됨(staged)
+
+    - 예시
+        - 새로운 파일을 만들었을 때
+            - untracked(추적안된 상태)
+        - add를 통해 스테이징
+            - untracked -> staged
