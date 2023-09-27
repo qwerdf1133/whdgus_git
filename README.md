@@ -166,3 +166,21 @@ Git
         - v1(major).0(minor).0(maintence)
     - Tag를 원격저장소에 Push 하면
     - 깃허브 저장소에서 Realease 버전 정보를 확인 가능하다.
+
+# fork : 원격저장소 복사해서 새로운 원격 저장소 만들기
+
+- 원본 저장소에 직접 푸시를 할 수 있는 사람은 소유자
+- 외 협력자(collaborator)로 등록되어야 함.
+- 깃허브 저장소 'Setting' - 'Collaborator' => 'Add People'
+- 에서 깃허브 계정(email 또는 username으로 검색하여 추가)
+
+- 원본 저장소 소유자 입장에서 협력자가 많아질 수록
+- 저장소 관리가 힘들어진다.
+- 오픈 소스에 참여(기여)하고 싶은 개발자에게 
+- 원본 저장소를 fork 하게 해서 
+- fork한 저장소에서 commit 을 하여 원본 소유자에게
+- contribute -> pull request를 통해
+- 원본 저장소에 파일을 추가할 수 있다.
+
+- branch : 하나의 원격 저장소에서 분기점을 나눔
+- fork : 여러 원격 저장소에서 분기를 나눔
